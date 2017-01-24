@@ -30,7 +30,7 @@ public class Client {
 		FileStruct file = new FileStruct();
 		
 		ServerInterface localServerStub = loadServerStub("127.0.0.1");
-		byte[] clientId;
+		byte[] clientId = null;
 		long checksum = calculateChecksum(args[1]);
 		switch(args[0]){
 		case "create":
@@ -41,17 +41,13 @@ public class Client {
 			break;
 		case "push":
 			// Load content
-			File fileToLoad = new File(args[1]);
 			byte[] content = Files.readAllBytes(Paths.get(args[1]));
-			localServerStub.push(args[1], content, clientId);
-			
 			// Load client id
 			clientId = getClientId(idFile);
 			
 			localServerStub.push(args[1], content, clientId);
 			break;
 		case "lock":
-			clientId = 0;
 			file=localServerStub.lock(args[1], checksum, clientId);
 			 
 			break;
