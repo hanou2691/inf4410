@@ -2,7 +2,7 @@ package ca.polymtl.inf4410.tp1.shared;
 
 public class FileStruct {
 	
-	 public FileStruct(String fileName, byte[] content, int idClient) {
+	 public FileStruct(String fileName, byte[] content, byte[] idClient) {
 		super();
 		this.fileName = fileName;
 		this.content = content;
@@ -10,7 +10,7 @@ public class FileStruct {
 	}
 	public String fileName;
 	public byte[] content;
-	public int idClient;
+	public byte[] idClient;
 	 
 
 }
