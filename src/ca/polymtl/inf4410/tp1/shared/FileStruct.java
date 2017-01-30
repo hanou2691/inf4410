@@ -1,6 +1,7 @@
 package ca.polymtl.inf4410.tp1.shared;
+import java.io.Serializable;
 
-public class FileStruct {
+public class FileStruct implements Serializable{
 	
 	 public FileStruct(String fileName, byte[] content, byte[] idClient) {
 		super();

@@ -4,8 +4,4 @@ public class FakeServer {
 	int execute(int a, int b) {
 		return a + b;
 	}
-	
-	void execute(int[] arr) {
-		return;
-	}
 }
