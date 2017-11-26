@@ -1,0 +1,643 @@
+*
+{
+    font-family : Roboto, sans-serif;
+}
+
+/*Remove blue outline around  buttons*/
+button:focus, input:focus
+{
+    outline : 0;
+}
+
+h1
+{
+    text-align  : center;
+    font-weight : 600;
+    margin      : 20px 0;
+    font-size   : 41px;
+    color       : #2183E4;
+}
+
+h3
+{
+    
+    font-size   : 25px;
+    
+    color       : #DCDCDC;
+    
+    font-weight : 100;
+    
+    line-height : 100px;
+}
+
+#login
+{
+    display       : inline-block;
+    margin        : auto;
+    box-shadow    : 1px 1px 1px 1px #00000047;
+    margin-bottom : 10px;
+    border-radius : 2px;
+    padding       : 20px;
+    position      : relative;
+    cursor        : pointer;
+}
+
+#login > i
+{
+    right    : 5px;
+    position : absolute;
+    top      : 5px;
+    color    : #343A40;
+    opacity  : 0.3;
+}
+
+#login > i:hover
+{
+    opacity : 1;
+    
+}
+
+#login p
+{
+    
+    font-weight : 100;
+}
+
+/*Tab*/
+div.tab
+{
+    overflow      : hidden;
+    margin        : auto;
+    display       : table;
+    width         : 100%;
+    table-layout  : fixed;
+    margin-top    : 50px;
+    margin-bottom : 30px;
+    background: transparent;
+}
+
+/*Boutons de la Tab*/
+div.tab button
+{
+    display        : table-cell;
+    width          : 49%;
+    border         : none;
+    font-size      : 15px;
+    text-transform : uppercase;
+    font-weight    : 900;
+    letter-spacing : 1px;
+    cursor         : pointer;
+    transition     : 0.2s;
+    background: transparent;
+    overflow: hidden;
+}
+
+#playlists
+{
+    
+    border-bottom : solid 1px #EEEEEE;
+    
+    padding       : 10px;
+    
+    background    : linear-gradient(to right, #F9F7F7, #FDFDFD);
+    
+    height: 125px;
+    
+    overflow: hidden;
+    
+    white-space: nowrap;
+    
+    overflow-x: scroll;
+}
+
+#playlist-label
+{
+    font-weight    : 900;
+    text-transform : uppercase;
+    color          : #78ABE9;
+}
+
+
+#playlists button.active
+{
+    background: linear-gradient(to right,#63dd79,#3bc65b);
+}
+#playlists button
+{
+    
+    background    : linear-gradient(to left, #2183E4, #4FA8FF);
+    
+    transition:1s;
+    color         : white;
+    
+    border-radius : 20px;
+    
+    line-height   : 100px;
+    
+    padding       : 0 20px;
+    
+    border        : none;
+    
+    position      : relative;
+    
+    padding-right : 50px;
+    
+    margin        : 0 10px;
+    
+    box-shadow    : 1px 1px 1px #00000026;
+    
+    font-weight   : 100;
+    
+    cursor: pointer;
+}
+
+#playlists button span
+{
+
+}
+
+#playlists button i
+{
+    
+    position      : absolute;
+    
+    right         : 0;
+    
+    line-height   : 30px;
+    
+    width         : 30px;
+    
+    border-radius : 0 100% 100% 0;
+}
+
+/*Active tab*/
+div.tab button:hover,
+div.tab button.active
+{
+    font-size     : 20px;
+    border-bottom : solid 3px;
+    color         : #2183E4;
+}
+
+input::placeholder
+{
+    font-weight : 200;
+    color       : #9D9D9D;
+}
+
+.search-bar
+{
+    position : relative;
+    width    : 80%;
+    display  : block;
+    margin   : auto;
+}
+
+.search-bar i
+{
+    position    : absolute;
+    top         : 0;
+    right       : 0;
+    font-size   : 20px;
+    line-height : 43px;
+    width       : 40px;
+    color       : #DADADA;
+    text-align  : center;
+}
+
+.music-player
+{
+    
+    height         : auto;
+    
+    vertical-align : bottom;
+    
+    border-top     : solid 1px #EEEEEE;
+    
+    padding        : 10px 5px;
+}
+
+.music-player a
+{
+    display        : inline-block;
+    width          : 30%;
+    vertical-align : middle;
+    border         : solid 1px;
+    border-radius  : 2px;
+    padding        : 9px;
+    text-align     : center;
+    font-weight    : 900;
+    margin-left    : 10%;
+    text-transform : uppercase;
+    font-size      : 12px;
+    transition     : 0.5s;
+}
+
+.music-player a:hover
+{
+    
+    background      : #007BFF;
+    
+    color           : white;
+    
+    text-decoration : none;
+}
+
+.music-player label
+{
+    font-size : 12px;
+    color     : grey;
+    display   : block;
+}
+
+.music-player audio
+{
+    width          : 60%;
+    vertical-align : bottom;
+    display        : inline-block;
+    vertical-align : middle;
+}
+
+.playlist-cta
+{
+    
+    text-align : left;
+}
+
+#create-playlist-form
+{
+    
+    width    : 100%;
+    
+    position : relative;
+}
+
+#create-playlist-form input
+{
+    
+    width         : 100%;
+    
+    line-height   : 42px;
+    
+    box-shadow    : 1px 1px 6px 0px #00000038;
+    
+    border        : none;
+    
+    margin-bottom : 20px;
+    
+    padding-left  : 10px;
+    
+    box-shadow: 1px 5px 7px 2px #0000002B;
+    
+    border-radius: 2px;
+}
+
+.playlist-cta #create-playlist
+{
+    cursor         : pointer;
+    background     : #3DC55C;
+    color          : white;
+    font-weight    : 100;
+    text-transform : uppercase;
+    padding        : 10px;
+    border         : none;
+    border-radius  : 1px;
+    letter-spacing : 1px;
+    position       : absolute;
+    right          : 0;
+    top            : 0;
+}
+
+#searchField
+{
+    width         : 100%;
+    margin        : auto;
+    display       : block;
+    line-height   : 40px;
+    border-radius : 3px;
+    border        : solid 1px #FBFBFBEE;
+    box-shadow    : 1px 5px 7px 2px #0000002B;
+    margin-bottom : 20px;
+    padding-left  : 10px;
+}
+
+#OkButton
+{
+    display : none;
+}
+
+/*Tab Content*/
+.tabcontent
+{
+    display    : none;
+    padding    : 6px 12px;
+    border-top : none;
+    /* border-left  : solid 1px #EEEEEE; */
+    /* border-right : solid 1px #EEEEEE; */
+    text-align : left;
+}
+
+/*Barre d'avancement de la chanson*/
+#player-slider
+{
+    display          : inline-block;
+    background-color : LightGray;
+    width            : 300px;
+    margin-left      : 15px;
+}
+
+/*Rond d'avancement de la chanson*/
+#player-progress
+{
+    background-color : black;
+    height           : 5px;
+    width            : 0%;
+    position         : relative;
+}
+
+/*Barre d'avancement de la chanson*/
+#player-progress-hand
+{
+    position      : absolute;
+    background    : rgb(130, 130, 130);
+    width         : 10px;
+    height        : 10px;
+    right         : -5px;
+    border-radius : 5px;
+    bottom        : -3px;
+}
+
+/*Logo des musiques*/
+.logo
+{
+    position    : relative;
+    margin-left : 10px;
+    margin-top  : 12px;
+    width       : 50px;
+    height      : 50px;
+}
+
+/*Description des chansons*/
+.musicDesc
+{
+    display        : inline-block;
+    vertical-align : middle;
+}
+
+#choose-playlist
+{
+    
+    position      : absolute;
+    
+    top           : 70px;
+    
+    right         : 0;
+    
+    background    : white;
+    
+    box-shadow    : 1px 1px 1px 1px #EEEEEE;
+    
+    padding       : 10px;
+    
+    border-radius : 2px;
+    
+    background    : #2183E4;
+    
+    color         : white;
+    
+    z-index: 10;
+}
+
+#choose-playlist label
+{
+    display        : block;
+    font-size      : 12px;
+    text-transform : uppercase;
+    font-weight    : 900;
+    letter-spacing : 1px;
+}
+
+#choose-playlist button
+{
+    
+    display     : block;
+    
+    width       : 100%;
+    
+    margin      : 10px 0;
+    
+    border      : none;
+    
+    color       : #1C69B5;
+    
+    font-weight : 900;
+    
+    cursor      : pointer;
+}
+
+.playlist-name
+{
+    
+    position      : absolute;
+    
+    /* top: 0; */
+    
+    right         : 25px;
+    
+    top           : 25px;
+    
+    border        : solid 1px;
+    
+    background    : yellow;
+    
+    color         : white;
+    
+    background    : linear-gradient(to left, #2183E4, #4FA8FF);
+    
+    color         : white;
+    
+    border-radius : 20px;
+    
+    line-height   : 30px;
+    
+    padding       : 0 20px;
+    
+    border        : none;
+    
+    box-shadow    : 1px 1px 1px #00000026;
+    
+    font-weight   : 100;
+}
+
+.musicDesc button,
+button.addToPlaylist
+{
+    
+    position      : absolute;
+    
+    right         : 0;
+    
+    top           : 15px;
+    
+    height        : 50px;
+    
+    width         : 50px;
+    
+    border-radius : 100%;
+    
+    font-size     : 30px;
+    
+    font-weight   : 900;
+    
+    right         : 20px;
+    
+    color         : white;
+    
+    background    : #26DA61;
+    
+    text-shadow   : 1px 1px 1px #00000042;
+    
+    border        : none;
+    
+    box-shadow    : 0px 0px 3px 1px #00000030;
+    
+    cursor        : pointer;
+}
+
+.musicDesc button:hover
+{
+    opacity : 0.8;
+}
+
+.musicDesc p
+{
+    
+    font-weight : 400;
+    
+    margin      : 0;
+}
+
+.musicDesc p.title
+{
+    
+    font-size   : 15px;
+    
+    line-height : 15px;
+    
+    margin      : 0;
+    
+    margin-top  : 5px;
+}
+
+.musicDesc p.artist
+{
+    
+    text-transform : none;
+    
+    font-weight    : 300;
+    
+    font-size      : 12px;
+    
+    color          : grey;
+    
+    line-height    : 16 ox;
+}
+
+/*Liste des chansons*/
+.song
+{
+    border-radius : 2px;
+    box-shadow    : 1px 1px 17px 3px #0000001A;
+    display       : block;
+    width         : 100%;
+    padding       : 8px;
+    margin        : auto;
+    margin-top    : 15px;
+    text-align    : left;
+}
+
+/*Boutons*/
+.btn
+{
+    background-color : #1DD069;
+    color            : black;
+    border           : 1px solid black;
+    color            : white;
+    font-weight      : 900;
+    font-size        : 14px;
+    text-transform   : uppercase;
+    letter-spacing   : 1px;
+    border-radius    : 2px;
+    border           : none;
+    box-shadow       : 1px 1px 1px #00000040;
+    margin-bottom    : 5px;
+}
+
+.song.jamendo-song
+{
+    position : relative;
+}
+
+.song span
+{
+    margin-bottom : 10px;
+    position      : absolute !important;
+    top           : 0;
+}
+
+.song.jamendo-song .jamendo-tag
+{
+    border-radius  : 2px;
+    top            : 2px;
+    position       : absolute;
+    background     : #67B7BF;
+    color          : white;
+    font-family    : arial;
+    text-transform : uppercase;
+    font-size      : 10px;
+    padding        : 2px 5px;
+    border-radius  : 1px;
+    letter-spacing : 1px;
+    box-shadow     : 1px 1px 1px #0003;
+}
+
+.song.jamendo-song .deezer-tag
+{
+    position       : relative;
+    background     : #FF3F6D;
+    color          : white;
+    font-family    : arial;
+    text-transform : uppercase;
+    font-size      : 10px;
+    padding        : 2px 5px;
+    border-radius  : 1px;
+    letter-spacing : 1px;
+    box-shadow     : 1px 1px 1px #0003;
+}
+
+.song.jamendo-song .spotify-tag
+{
+    border-radius  : 2px;
+    top            : 2px;
+    background     : #1DD069;
+    color          : white;
+    font-family    : arial;
+    text-transform : uppercase;
+    font-size      : 10px;
+    padding        : 2px 5px;
+    border-radius  : 1px;
+    letter-spacing : 1px;
+    box-shadow     : 1px 1px 1px #0003;
+}
+
+.song.jamendo-song img
+{
+    width          : 50px;
+    height         : 50px;
+    object-fit     : cover;
+    border-radius  : 100%;
+    display        : inline-block;
+    margin         : 10px;
+    vertical-align : middle;
+    box-shadow     : 1px 1px 1px 1px #00000026;
+}

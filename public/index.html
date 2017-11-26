@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+              integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+              crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="canevas.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        <script src="musicScript.js"></script>
+    </head>
+
+
+    <body>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h1>Music Browser 2.0</h1>
+
+
+                    <div id="login">
+                        <i class="fa fa-times"></i>
+                        <p>Connectez vous a Spotify pour afficher les chansons de celui-ci</p>
+                        <a href="/login" class="btn btn-primary">Log in with Spotify</a>
+                    </div>
+
+                    <div class="tab">
+                        <button class="tablinks active" id="musicButton" data-tab="musiqueTab">Musique</button>
+                        <!--<button class="tablinks" id="playListButton">Rechercher PlayList</button>-->
+                        <button class="tablinks" id="mesPlayListButton" data-tab="playListTab">PlayList</button>
+                    </div>
+
+                    <div id="musiqueTab" class="tabcontent" style="display: block;">
+                        <div class="search-bar">
+                            <input type="text" id="searchField" placeholder="Search any track..." value="">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+
+                    <div id="playListTab" class="tabcontent">
+                        <div class="playlist-cta">
+                            <form id="create-playlist-form">
+                                <input name="playlist-name" placeholder="Enter a cool name for your playlist..." required>
+                                <button id="create-playlist" type="submit">
+                                    <i class="fa fa-plus-circle"></i> create playlist
+                                </button>
+                            </form>
+                        </div>
+                        <label id="playlist-label">
+                            my playlists
+                        </label>
+                        <div id="playlists">
+
+
+                        </div>
+                    </div>
+
+                    <div id="mesPlaylistTab" class="tabcontent">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </body>
+    <div id="dz-root"></div>
+    <script src="http://cdn-files.deezer.com/js/min/dz.js"></script>
+
+
+</html>
